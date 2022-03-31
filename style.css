@@ -1,0 +1,31 @@
+.container{
+    display: grid;
+    background-color: ghostwhite;
+    grid-area: "header header header"
+                "hero hero hero"
+                "hero hero hero"
+                "produc produc produc"
+                "related related related";
+    width: 80%;
+    border-radius: 10px;
+    gap: 20px;
+    margin: auto;
+}
+.nav-container{
+    flex: content;
+    align-items: initial;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+@media screen and (min-width:40em){
+.columns-2 > *{
+    flex-basis: 100%;
+}
+.columns-2 > * + * {
+    margin-left: 2em;
+}
+}
+
+
